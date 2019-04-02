@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.wlandirect.Main_Activity">
+    <!--垂直线性布局-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我的设备："
+        android:textSize="20sp"
+        android:textColor="#c10707" />
+    <!--提示信息-->
+
+    <TextView
+        android:id="@+id/my_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#000000" />
+    <!--显示设备型号-->
+
+    <!--以上模块显示本机信息-->
+
+    <TextView
+        android:id="@+id/tv_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WLAN DIRECT"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:gravity="center_horizontal"
+        android:background="#c10707" />
+    <!--提示信息-->
+
+    <Button
+        android:id="@+id/bt_discover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   搜索设备   "
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:background="#c10707"
+        android:layout_margin="5dp" />
+    <!--开始搜索按钮-->
+
+    <Button
+        android:id="@+id/bt_stopdiscover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   停止搜索   "
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:background="#c10707"
+        android:layout_margin="5dp" />
+    <!--停止搜索按钮-->
+
+    <Button
+        android:id="@+id/bt_stopconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   断开连接   "
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:background="#c10707"
+        android:layout_margin="5dp" />
+    <!--断开已有连接-->
+
+    <!--以上模块连接为主-->
+
+    <EditText
+        android:id="@+id/edit_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:hint="在这里输入要发送的数据！" />
+    <!--发送数据确认-->
+
+    <Button
+        android:id="@+id/bt_senddata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   发送数据   "
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:background="#c10707"
+        android:layout_margin="5dp" />
+    <!--发送数据按钮-->
+
+    <TextView
+        android:id="@+id/show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:text="RESULT IS NULL"
+        android:gravity="center_horizontal"
+        android:background="#c10707" />
+    <!--显示接收数据-->
+
+    <!--以上模块用于通信-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!--连接列表-->
+
+</LinearLayout>
